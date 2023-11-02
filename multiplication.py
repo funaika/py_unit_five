@@ -1,7 +1,12 @@
-def multiplication_table(number):
-    """
-    Ex. multiplication_table(6) returns "6 12 18 24 30 36 42 48 54 60 66 72 "
-    :param number: An integer
-    :return: A string of 12 values representing the mulitiplication table of the parameter number.
-    """
-    pass # Make sure to delete this line when writing your function.
+#multiplication tables
+#kalen funai
+#11/01/2023
+
+def multiplication_table(numberLearned):
+    strV = ""
+    for x in range(1,10):
+        multiNumber = str(numberLearned * x)
+        strV += multiNumber + " "
+    print(strV)
+
+multiplication_table(6)
