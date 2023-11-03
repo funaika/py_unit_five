@@ -1,14 +1,9 @@
-def get_input():
-    """
-    This function ensures that a user correctly enters in a number in the proper range.
-    :return: a value between 1 and 10, inclusive
-    """
-    pass  # make sure to delete this line after you complete your function
 
 
-def main():
-    print(get_input())
-
-
-if __name__ == '__main__':
-    main()
+while True:
+        userInput = input("enter a number 1-10")
+        if 1 <= int(userInput) <= 10:
+            print(userInput)
+            break
+        else:
+            print("invalid input")
