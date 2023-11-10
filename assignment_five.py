@@ -3,6 +3,11 @@
 #11/06/2023
 
 import random
+
+print("This game will have you guess a number 1-100.")
+print("You will keep guessing until you get the number correct!")
+print("Once you get the corrects answer 3 times, your average number of guesses will be reported to you.")
+print("Have fun! 😆")
 def getNumber():
     '''
     the function generates a random number 1-100
@@ -44,9 +49,9 @@ def guessingGame():
             print("Congrats, you guessed the right number! It's", compNumber, ", you won!")
             return numberGuesses
         elif userGuess > int(compNumber):
-            print("You guessed too high, try again.")
+            print("You guessed too high, L 😋, Try again!")
         elif userGuess < int(compNumber):
-            print("You guessed too low, try again.")
+            print("You guessed too low, L 😋, Try again!")
 
 
 def main():
